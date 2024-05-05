@@ -1,0 +1,101 @@
+@font-face {
+    font-family: gilroy;
+    src: url(/gilroy-free/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #352931;
+    display: flex;
+   
+}
+#main #part1{
+    width: 20%;
+    height: 100%;
+    background-color: #352931;
+}
+#text{
+    width: 32%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+    padding: 15px;
+    left: 5%;
+    top: 5%;
+}
+#icon{
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#text h3{
+    font-size: 2vw;
+    color: white;
+}
+#part2{
+    width: 70%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-photo/islamic-lantern-with-blurred-mosque-background-al-fitr-adha-eid_1123-287.jpg?t=st=1710429795~exp=1710433395~hmac=f5007da4b73f80ba327fc6d587526f0e7b927d863f3147552783e55f416573f7&w=826);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#overlay{
+    position: absolute;
+    top: 40%;
+    left: -18%;
+}
+#overlay h1{
+    font-family: gilroy;
+    font-weight: 900;
+    font-size: 9vw;
+    color: white;
+    text-transform: uppercase;
+    line-height: 95px;
+}
+#part3{
+    width: 10%;
+    height: 100%;
+    background-color: #352931;
+}
+#part3 #img{
+    width: 250px;
+    height: 350px;
+    background-image: url(https://img.freepik.com/free-photo/free-photo-ramadan-kareem-eid-mubarak-royal-elegant-lamp-with-mosque-holy-gate-with-fireworks_1340-23597.jpg?t=st=1710430589~exp=1710434189~hmac=0b4fe0893a8bd7cc79c10c11523d79be4029a733adfb2e6c1f450e6fc397cf9c&w=826);
+    background-size: cover;
+    background-position:left;
+    position: absolute;
+    top: 33%;
+    right: 5%;
+    border-radius: 15px;
+}
+#part3 #vertical-text{
+    position: absolute;
+    top:45%;
+    right: -20%;
+    display: flex;
+    transform: rotate(90deg);
+    justify-content: space-between;
+}
+#vertical-text h1{
+    font-family: gilroy;
+    font-weight: bold;
+    font-size: 6vw;    
+    color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:white;
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+#main #left{
+    width: 30%;
+    height: 100%;
+}
+#left #nav{
+    width: 100%;
+    height: 10%;
+    padding:0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav #links{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#nav h3{
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+#links h3 i{
+    color: skyblue;
+}
+#left #content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#content h1{
+    font-size: 6.5vw;
+}
+#content p{
+    font-size: 1.3vw;
+    opacity: .7;
+    margin: 3% 0;
+}
+#content h3{
+    font-weight: 600;
+    text-align: left;
+    padding:0px 80px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#main #right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#right #right-top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+#right-top #img-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-photo/sea-sand-cactus-gray-pot_53876-126222.jpg?t=st=1710440532~exp=1710444132~hmac=22aa86ab8a94c7243f95efe76670bcdb7644451176dd23e1510f099f5abcf572&w=740);
+    background-size: cover;
+    background-position: center;
+}
+#img-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-photo/fresh-orange-fruit_144627-21367.jpg?t=st=1710440589~exp=1710444189~hmac=f3c552640cb01a8841322b0d46d92db5b8f55cea599ca19b5557ee8a540df943&w=826);
+    background-size: cover;
+    background-position: center;
+}
+#right-bottom{
+    width: 100%;
+    height:60%;
+    background-image: url(https://img.freepik.com/free-photo/nature-beauty-small-succulent-plant-generated-by-ai_188544-19552.jpg?t=st=1710440733~exp=1710444333~hmac=90ec4e1b7ef914878ac03d49eb6e9ff6b89ff3d09acaf6f9932f4a6d31aa9400&w=900);
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width:576px)  {
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #left #nav{
+        padding: 30px;
+    }
+    #left #content{
+        position: relative;
+        top: -10%;
+    }
+    #left #content h1{
+        font-size: 12vw;
+    }
+    #left #content p{
+        font-size: 4vw;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
+@media (min-width:576px) and (max-width:992px)  {
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #left #nav{
+        padding: 30px;
+    }
+    #left #content{
+        position: relative;
+        top: -10%;
+    }
+    #left #content h1{
+        font-size: 12vw;
+    }
+    #left #content p{
+        font-size: 4vw;
+    }
+    #main #right{
+        width: 100%;
+    }
+}

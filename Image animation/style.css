@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+#main #container{
+    width: 75%;
+    height: 85%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#container #img-container{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#img-container img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#container #content{
+    width: 35%;
+    height: 22%;
+    overflow: hidden;
+    position:absolute;
+    z-index: 999;
+    bottom: 15%;
+    left: -7%;
+}
+#content h1{
+    font-size: 4vw;
+    position: absolute;
+    top: 90%;
+}
